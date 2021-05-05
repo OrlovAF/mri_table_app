@@ -1,0 +1,41 @@
+.headCell {
+  &__container {
+    color: #4b4b4b;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 400;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    &:hover {
+      .headCell__sortable {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__sortable {
+    opacity: 0;
+    transition: opacity,transform ease-in-out 0.2s;
+
+    svg {
+      height: 17px;
+    }
+  }
+
+  &__sortable svg {
+    transition: transform ease-in-out 0.2s;
+
+  }
+
+  &__asc svg {
+    transform: rotateZ(180deg);
+  }
+
+  &__visible {
+    opacity: 1;
+  }
+}

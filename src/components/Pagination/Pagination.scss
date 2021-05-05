@@ -1,0 +1,40 @@
+.pagination {
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+     span {
+      margin: 10px;
+    }
+
+    select {
+      padding: 5px;
+      border: none;
+      background: transparent;
+      &:focus {
+        border: none;
+      }
+    }
+  }
+}
+
+.arrow_controls {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    cursor: pointer;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    svg {
+      height: 18px;
+    }
+    &:hover {
+      opacity: 0.5;
+      transition: opacity ease-in-out 0.2s;
+    }
+  }
+
+}

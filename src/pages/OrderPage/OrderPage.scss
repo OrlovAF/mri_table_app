@@ -1,0 +1,14 @@
+.order_header {
+  display: flex;
+  padding: 17px 17px 10px 17px;
+  justify-content: space-between;
+  h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+  &__actions {
+    cursor: pointer;
+  }
+}
